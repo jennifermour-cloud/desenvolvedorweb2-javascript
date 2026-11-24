@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist JS vs jQuery</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+ 
+    <main class="container">
+        <h1>Checklist de Tarefas</h1>
+   
+         <div class="checklist">
+            <label><input type="checkbox" name="tarefa" value="Configurar ambiente"> Configurar ambiente</label>
+            <label><input type="checkbox" name="tarefa" value="Criar estrutura HTML"> Criar estrutura HTML</label>
+            <label><input type="checkbox" name="tarefa" value="Estilizar com CSS"> Estilizar com CSS</label>
+            <label><input type="checkbox" name="tarefa" value="Implementar lógica JS"> Implementar lógica JS</label>
+            <label><input type="checkbox" name="tarefa" value="Testar com jQuery"> Testar com jQuery</label>                    
+        </div>
+ 
+         <div class="botoes">
+            <button type="button" id="btn-js">Executar com JavaScript</button>
+            <button type="button" id="btn-jq">Executar com jQuery</button>
+        </div>
+ 
+        <div id="resultado" class="resultado">
+            <em>Selecione os itens acima e clique em um dos botões.</em>
+        </div>
+    </main>
+ 
+    <!-- Biblioteca jQuery via CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ 
+    <!-- Arquivo externo JS / jQuery -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
+ 
